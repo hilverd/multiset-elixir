@@ -23,22 +23,22 @@ Then run `mix deps.get` in your shell to fetch and compile `multiset`.
 iex> Multiset.new([1, 2, 1, 3])
 #Multiset<[{1, 2}, {2, 1}, {3, 1}]>
 
-iex> set1 = ~w(to be or not to be)a |> Multiset.new
+iex> multiset1 = ~w(to be or not to be)a |> Multiset.new
 #Multiset<[be: 2, not: 1, or: 1, to: 2]>
 
-iex> set2 = ~w(neither a borrower nor a lender be)a |> Multiset.new
+iex> multiset2 = ~w(neither a borrower nor a lender be)a |> Multiset.new
 #Multiset<[a: 2, be: 1, borrower: 1, lender: 1, neither: 1, nor: 1]>
 
-iex> Multiset.values(set1)
+iex> Multiset.values(multiset1)
 #MapSet<[:be, :not, :or, :to]>
 
-iex> Multiset.intersection(set1, set2)
+iex> Multiset.intersection(multiset1, multiset2)
 #Multiset<[be: 1]>
 
-iex> Multiset.union(set1, set2)
+iex> Multiset.union(multiset1, multiset2)
 #Multiset<[a: 2, be: 2, borrower: 1, lender: 1, neither: 1, nor: 1, not: 1, or: 1, to: 2]>
 
-iex> Multiset.sum(set1, set2)
+iex> Multiset.sum(multiset1, multiset2)
 #Multiset<[a: 2, be: 3, borrower: 1, lender: 1, neither: 1, nor: 1, not: 1, or: 1, to: 2]>
 ```
 
