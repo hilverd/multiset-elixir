@@ -61,8 +61,8 @@ defmodule Multiset do
 
   ## Examples
 
-  iex> Multiset.from_list([{1, 3}, {2, 4}, {3, 0}])
-  #Multiset<[{1, 3}, {2, 4}]>
+      iex> Multiset.from_list([{1, 3}, {2, 4}, {3, 0}])
+      #Multiset<[{1, 3}, {2, 4}]>
   """
   @spec from_list([{t, pos_integer}]) :: t
   def from_list(pairs) do
