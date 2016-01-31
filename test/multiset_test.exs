@@ -32,4 +32,14 @@ defmodule MultisetTest do
     multiset = list |> Enum.into(Multiset.new)
     assert Multiset.to_list(multiset) == [{1, 1}, {2, 1}, {3, 1}, {4, 2}, {7, 1}, {8, 2}]
   end
+
+  test "size of sum" do
+    result = Multiset.sum(Multiset.new([1, 2, 2]), Multiset.new([2, 3, 3]))
+    assert Multiset.size(result) == 6
+  end
+
+  test "size of union" do
+    result = Multiset.union(Multiset.new([1, 2, 2]), Multiset.new([2, 3, 3]))
+    assert Multiset.size(result) == 5
+  end
 end

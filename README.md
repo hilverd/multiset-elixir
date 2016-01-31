@@ -3,7 +3,7 @@
 This is an implementation of [multisets](https://en.wikipedia.org/wiki/Multiset) for
 Elixir. Multisets are sets allowing multiple instances of values.
 
-Documentation: http://hexdocs.pm/multiset/0.0.1/Multiset.html.
+Documentation: http://hexdocs.pm/multiset/0.0.2/Multiset.html.
 
 ## Usage
 
@@ -11,7 +11,7 @@ Add this library to your list of dependencies in `mix.exs`:
 
 ``` elixir
 def deps do
-  [{:multiset, "~> 0.0.1"}]
+  [{:multiset, "~> 0.0.2"}]
 end
 ```
 
@@ -42,5 +42,5 @@ iex> Multiset.sum(set1, set2)
 #Multiset<[a: 2, be: 3, borrower: 1, lender: 1, neither: 1, nor: 1, not: 1, or: 1, to: 2]>
 ```
 
-See the [documentation](http://hexdocs.pm/multiset/0.0.1/Multiset.html) for more available
+See the [documentation](http://hexdocs.pm/multiset/0.0.2/Multiset.html) for more available
 functionality.

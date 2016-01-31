@@ -255,7 +255,7 @@ defmodule Multiset do
       multiplicity1 + multiplicity2
     end)
 
-    %Multiset{map: new_map}
+    %Multiset{map: new_map, size: sum_of_map_values(new_map)}
   end
 
   @doc """
@@ -285,7 +285,7 @@ defmodule Multiset do
       max(multiplicity1, multiplicity2)
     end)
 
-    %Multiset{map: new_map}
+    %Multiset{map: new_map, size: sum_of_map_values(new_map)}
   end
 
   @doc """
@@ -323,4 +323,6 @@ defmodule Multiset do
       concat ["#Multiset<", Inspect.List.inspect(Multiset.to_list(multiset), opts), ">"]
     end
   end
+
+  defp sum_of_map_values(map), do: map |> Map.values |> Enum.sum
 end
