@@ -1,5 +1,7 @@
 # Multiset
 
+[![Build Status](https://api.travis-ci.org/hilverd/multiset-ex.svg?branch=master)](https://travis-ci.org/hilverd/multiset-ex)
+
 This is an implementation of [multisets](https://en.wikipedia.org/wiki/Multiset) for
 Elixir. Multisets are sets allowing multiple instances of values.
 
@@ -18,6 +20,8 @@ end
 Then run `mix deps.get` in your shell to fetch and compile `multiset`.
 
 ## Examples
+
+Start an interactive Elixir shell with `iex -S mix`.
 
 ``` elixir
 iex> Multiset.new([1, 2, 1, 3])
