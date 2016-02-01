@@ -1,16 +1,15 @@
-language: erlang
+language: elixir
+elixir:
+  - 1.2.0
+  - 1.1.1
+  - 1.1.0
+  - 1.0.5
+  - 1.0.4
 otp_release:
+  - 18.2
+  - 18.1
   - 18.0
+  - 17.5
+  - 17.4
+  - 17.3
 sudo: false
-before_install:
-  - wget http://s3.hex.pm/builds/elixir/master.zip
-  - unzip -d elixir master.zip
-before_script:
-  - export PATH=`pwd`/elixir/bin:$PATH
-  - mix local.hex --force
-  - mix deps.get
-script:
-  - mix test
-notifications:
-  recipients:
-    - me@hilverd.com
