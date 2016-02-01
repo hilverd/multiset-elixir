@@ -1,6 +1,8 @@
 # Multiset
 
 [![Build Status](https://api.travis-ci.org/hilverd/multiset-ex.svg?branch=master)](https://travis-ci.org/hilverd/multiset-ex)
+[![Hex.pm](https://img.shields.io/hexpm/v/multiset.svg?style=flat-square)](https://hex.pm/packages/multiset)
+[![Hex.pm](https://img.shields.io/hexpm/dt/multiset.svg?style=flat-square)](https://hex.pm/packages/multiset)
 
 This is an implementation of [multisets](https://en.wikipedia.org/wiki/Multiset) for
 Elixir. Multisets are sets allowing multiple instances of values.
