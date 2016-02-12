@@ -8,7 +8,7 @@ defmodule Multiset.Mixfile do
      version: @version,
      elixir: "~> 1.2",
      name: "Multiset",
-     source_url: "https://github.com/hilverd/multiset-ex",
+     source_url: "https://github.com/hilverd/multiset-elixir",
      description: description,
      package: package,
      build_embedded: Mix.env == :prod,
@@ -34,6 +34,6 @@ defmodule Multiset.Mixfile do
   defp package do
     [maintainers: ["Hilverd Reker"],
      licenses: ["Apache 2.0"],
-     links: %{"GitHub" => "https://github.com/hilverd/multiset-ex"}]
+     links: %{"GitHub" => "https://github.com/hilverd/multiset-elixir"}]
   end
 end
