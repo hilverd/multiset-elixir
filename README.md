@@ -7,7 +7,7 @@
 This is an implementation of [multisets](https://en.wikipedia.org/wiki/Multiset) for
 Elixir. Multisets are sets allowing multiple instances of values.
 
-Documentation: http://hexdocs.pm/multiset/0.0.2/Multiset.html.
+Documentation: http://hexdocs.pm/multiset.
 
 ## Usage
 
