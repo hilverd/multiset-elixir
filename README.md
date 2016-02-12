@@ -15,7 +15,7 @@ Add this library to your list of dependencies in `mix.exs`:
 
 ``` elixir
 def deps do
-  [{:multiset, "~> 0.0.2"}]
+  [{:multiset, "~> 0.0.3"}]
 end
 ```
 
@@ -48,5 +48,4 @@ iex> Multiset.sum(multiset1, multiset2)
 #Multiset<[a: 2, be: 3, borrower: 1, lender: 1, neither: 1, nor: 1, not: 1, or: 1, to: 2]>
 ```
 
-See the [documentation](http://hexdocs.pm/multiset/0.0.2/Multiset.html) for more available
-functionality.
+See the [documentation](http://hexdocs.pm/multiset) for more available functionality.

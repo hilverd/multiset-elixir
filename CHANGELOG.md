@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.0.3 (2016-02-12)
+
+Rename GitHub repository from `multiset-ex` to `multiset-elixir`.
+
 ## v0.0.2 (2016-01-31)
 
 Bug fix: results of sums and unions now have correct size.
