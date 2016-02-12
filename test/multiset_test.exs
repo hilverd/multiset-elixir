@@ -1,5 +1,5 @@
 defmodule MultisetTest do
-  use ExUnit.Case
+  use ExUnit.Case, async: true
   doctest Multiset
 
   test "using reduce" do
