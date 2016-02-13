@@ -52,6 +52,9 @@ iex> Multiset.union(multiset1, multiset2)
 
 iex> Multiset.sum(multiset1, multiset2)
 #Multiset<[a: 2, be: 3, borrower: 1, lender: 1, neither: 1, nor: 1, not: 1, or: 1, to: 2]>
+
+iex> Enum.reduce(multiset1, 0, fn {_k, multiplicity}, n -> n + multiplicity end)
+6
 ```
 
 See the [documentation](http://hexdocs.pm/multiset) for more available functionality.
