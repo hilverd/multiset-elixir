@@ -15,7 +15,7 @@ Add this library to your list of dependencies in `mix.exs`:
 
 ``` elixir
 def deps do
-  [{:multiset, "~> 0.0.3"}]
+  [{:multiset, "~> 0.0.4"}]
 end
 ```
 
