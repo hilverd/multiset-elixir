@@ -10,7 +10,7 @@ defmodule Multiset do
   be accessed directly.  Instead, use the functions in this module.
   """
 
-  @opaque t :: %Multiset{map: map}
+  @opaque t :: %Multiset{map: %{value => non_neg_integer}}
   @type value :: term
   defstruct map: %{}, size: 0
 
