@@ -32,11 +32,17 @@ iex> Multiset.new([1, 2, 1, 3])
 iex> multiset1 = ~w(to be or not to be)a |> Multiset.new
 #Multiset<[be: 2, not: 1, or: 1, to: 2]>
 
-iex> multiset2 = ~w(neither a borrower nor a lender be)a |> Multiset.new
-#Multiset<[a: 2, be: 1, borrower: 1, lender: 1, neither: 1, nor: 1]>
-
 iex> Multiset.values(multiset1)
 #MapSet<[:be, :not, :or, :to]>
+
+iex> Multiset.multiplicity(multiset1, :be)
+2
+
+iex> Multiset.multiplicity(multiset1, :or)
+1
+
+iex> multiset2 = ~w(neither a borrower nor a lender be)a |> Multiset.new
+#Multiset<[a: 2, be: 1, borrower: 1, lender: 1, neither: 1, nor: 1]>
 
 iex> Multiset.intersection(multiset1, multiset2)
 #Multiset<[be: 1]>
