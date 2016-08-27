@@ -11,15 +11,21 @@ Documentation: http://hexdocs.pm/multiset.
 
 ## Usage
 
-Add this library to your list of dependencies in `mix.exs`:
+1. Add `multiset` to your list of dependencies in `mix.exs`:
 
-``` elixir
-def deps do
-  [{:multiset, "~> 0.0.4"}]
-end
-```
+    ``` elixir
+    def deps do
+      [{:multiset, "~> 0.0.4"}]
+    end
+    ```
 
-Then run `mix deps.get` in your shell to fetch and compile `multiset`.
+2. Ensure `multiset` is started before your application:
+
+    ``` elixir
+    def application do
+      [applications: [:multiset]]
+    end
+    ```
 
 ## Examples
 
